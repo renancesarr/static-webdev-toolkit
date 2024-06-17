@@ -1,6 +1,6 @@
-# Projeto de Site Estático com Vite, TailwindCSS e Alpine.js
+# static-webdev-toolkit
 
-Este projeto é um site estático configurado para desenvolvimento moderno usando Vite, TailwindCSS e Alpine.js. Ele inclui um sistema de versionamento dinâmico e um servidor para testar builds de produção localmente.
+Static-WebDev-Toolkit: Um kit completo para desenvolvimento de sites estáticos modernos usando Vite, TailwindCSS e Alpine.js.  Ele inclui um sistema de versionamento dinâmico e um servidor para testar builds de produção localmente.
 
 ### Estrutura do Projeto
 
@@ -108,3 +108,5 @@ npm run prebuild:major && npm run build
 ```bash
 npm run serve:prod -- v0.2.1
 ```
+# static-webdev-toolkit
+Static-WebDev-Toolkit: Um kit completo para desenvolvimento de sites estáticos modernos usando Vite, TailwindCSS e Alpine.js. Inclui automações e configurações otimizadas.
