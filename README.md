@@ -10,17 +10,23 @@ Static-WebDev-Toolkit: Um kit completo para desenvolvimento de sites estáticos 
 - `public/`: Arquivos estáticos públicos.
 
 ### Tecnologias utilizadas:
+
 - Tailwind
 - Alpine.js
 - Vite
+## Como Usar Este Template
 
-### Instalação
+1. **Crie um novo repositório a partir do template**:
 
-Primeiro, clone o repositório e instale as dependências:
+   - Vá para a página [Static-WebDev-Toolkit](https://github.com/renancesarr/static-webdev-toolkit).
+   - Clique no botão "Use this template".
+   - Siga as instruções para criar um novo repositório baseado neste template.
+
+2. **Clone o novo repositório**:
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git clone https://github.com/seu-usuario/seu-novo-repositorio.git
+cd seu-novo-repositorio
 npm install
 ```
 
@@ -41,42 +47,34 @@ O projeto utiliza o sistema de branch para gerenciar o desenvolvimento de novas 
 
 Esse sistema de branch permite um desenvolvimento mais organizado e seguro, evitando conflitos entre diferentes funcionalidades e facilitando a colaboração entre os membros da equipe.
 
-#### Exemplo de git
+### Automação do git
 
 Aqui estão alguns exemplos de comandos git para criar e mesclar branches de funcionalidade e correção de bugs:
 
-##### Criar branch de funcionalidade
+#### Criar branches
 
 ```bash
-git checkout develop
-git checkout -b feature/nome-da-funcionalidade
-git push -u origin feature/nome-da-funcionalidade
+npm run create-branch "descreva a funcionalidade"
 ```
-##### Mesclar uma Brach de funcionalidade
+##### Tipos de Branches
+ 1. bugfix
+ 2. feature
+ 3. 
+
+#### Fazer commit
 
 ```bash
-git checkout develop
-git pull origin develop
-git merge feature/nome-da-funcionalidade
-git push
+npm run commit
 ```
 
-##### Criar uma Branch de Corriçao de Bug
+#### Mesclar uma Branch
 
 ```bash
-git checkout develop
-git checkout -b bugfix/nome-do-bug
-git push -u origin bugfix/nome-do-bug
+npm run merge
 ```
 
-##### Mesclar uma Branch de Correção de Bug
 
-```bash
-git checkout develop
-git pull origin develop
-git merge bugfix/nome-do-bug
-git push
-```
+
 
 
 ## Scripts NPM
@@ -108,5 +106,4 @@ npm run prebuild:major && npm run build
 ```bash
 npm run serve:prod -- v0.2.1
 ```
-# static-webdev-toolkit
-Static-WebDev-Toolkit: Um kit completo para desenvolvimento de sites estáticos modernos usando Vite, TailwindCSS e Alpine.js. Inclui automações e configurações otimizadas.
+

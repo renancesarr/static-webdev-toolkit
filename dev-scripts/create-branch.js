@@ -6,9 +6,9 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-async function getBranchName(description) {
+async function getBranchName(description, typeBranch) {
   try {
-    const prompt = `Generate a concise branch name for the following task description (example: feature/new-fature):\n"${description}"`;
+    const prompt = `Generate a concise branch name for the following task description (example: ${typeBranch}/new-${typeBranch}):\n"${description}"`;
     const response = await openai.chat.completions.create({
       model: 'gpt-4o-2024-05-13',
       messages: [{ role: 'system', content: 'You are a specialized assistant in Git, static web developer and a project manager.' }, { role: 'user', content: prompt }],
@@ -41,6 +41,11 @@ function createBranch(branchName) {
     if (!description) {
       console.error('Please provide a description for the task.');
       process.exit(1);
+    }
+
+    let typeBranch = process.argv.slice(2).join(' ');
+    if (!typeBranch) {
+      typeBranch = "feature";
     }
   
     const branchName = await getBranchName(description);
