@@ -2,7 +2,7 @@
 
 Static-WebDev-Toolkit: Um kit completo para desenvolvimento de sites estáticos modernos usando Vite, TailwindCSS e Alpine.js.  Ele inclui um sistema de versionamento dinâmico e um servidor para testar builds de produção localmente.
 
-### Estrutura do Projeto
+## Estrutura do Projeto
 
 - `src/`: Contém os arquivos fonte do projeto (HTML, CSS, JS).
 - `releases/`: Diretório onde as builds de produção são armazenadas, organizadas por versão.
@@ -14,7 +14,7 @@ Static-WebDev-Toolkit: Um kit completo para desenvolvimento de sites estáticos 
 - Tailwind
 - Alpine.js
 - Vite
-## Como Usar Este Template
+### Como Usar Este Template
 
 1. **Crie um novo repositório a partir do template**:
 
@@ -35,7 +35,7 @@ npm install
 O projeto já está configurado para usar TailwindCSS. O arquivo tailwind.config.js está configurado para monitorar arquivos em ./src/**/*.{html,js}. O arquivo postcss.config.js inclui tailwindcss e autoprefixer.
 
 
-### Sistema de Branch
+## Sistema de Branch
 
 O projeto utiliza o sistema de branch para gerenciar o desenvolvimento de novas funcionalidades, correções de bugs e outras alterações no código. O fluxo de trabalho com branches é o seguinte:
 
