@@ -73,10 +73,6 @@ npm run commit
 npm run merge
 ```
 
-
-
-
-
 ## Scripts NPM
 
 ### Desenvolvimento
